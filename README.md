@@ -1,6 +1,22 @@
-# Thrifty_AI
-
 # TASK 1
+## 🔑 Design Choices
+Used **list** as a Data Structure which can handle a million records
+Memory: 1M readings → store in list (fine, ~8 MB). Prefix sum list same size.
+
+_getAverage(k)_
+Maintaining a pre calculated sum for faster queries 
+Maintain prefix[i] = sum of first i readings.
+So, Average of last k readings = prefix[𝑛]−prefix[𝑛−𝑘]/k
+	​
+_getMaxWindow(k)_
+This is equivalent to finding the maximum subarray sum of length k.
+With pre claculated sums, window sum for [i, i+k-1] = prefix[i+k] - prefix[i].
+
+##⚡ Performance
+- addReading → O(1).
+- getAverage(k) → O(1).
+- getMaxWindow(k) → O(n) worst case.
+
 
 
 # TASK 2
