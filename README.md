@@ -24,10 +24,23 @@ The agent can detect user intent, route queries to the correct sub-agent, and ma
 ## 📦 Setup  
 
 1. **Clone the repository**  
-
 ```bash
 git clone https://github.com/your-username/langgraph-agent.git
-cd langgraph-agent
+```
+
+2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+3. Create a .env file
+```bash
+OPENAI_API_KEY=your_openai_api_key
+```
+4. Run
+```bash
+python main.py
+```
 
 
 # TASK 3
