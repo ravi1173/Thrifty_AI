@@ -55,7 +55,29 @@ OPENAI_API_KEY=your_openai_api_key
 ```bash
 python main.py
 ```
-
+```
+                 +-----------+
+                 | __start__ |
+                 +-----------+
+                       *
+                       *
+                       *
+               +---------------+
+               | detect_intent |
+               +---------------+
+               ...            ..
+             ..                 ..
+           ..                     ..
++----------------+           +---------------+
+| creative_agent |           | factual_agent |
++----------------+           +---------------+
+               ***            **
+                  **        **
+                    **    **
+                  +---------+
+                  | __end__ |
+                  +---------+
+```
 
 # TASK 3
 Demonstrates binary classification using Logistic Regression on a synthetic dataset of real and fake data points.
