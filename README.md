@@ -2,12 +2,13 @@
 ## 🔑 Design Choices
 Used **list** as a Data Structure which can handle a million records <br>
 Memory: 1M readings → store in list (fine, ~8 MB). 
-<br>
+
 _getAverage(k)_
 - Maintaining a pre calculated sum for faster queries. 
 - Maintain prefix[i] = sum of first i readings.
 - So, Average of last k readings = prefix[𝑛]−prefix[𝑛−𝑘]/k
-<br>​
+
+​
 _getMaxWindow(k)_
 This is equivalent to finding the maximum subarray sum of length k.
 With pre claculated sums, window sum for [i, i+k-1] = prefix[i+k] - prefix[i].
