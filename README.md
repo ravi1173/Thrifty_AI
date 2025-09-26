@@ -1,10 +1,10 @@
 # TASK 1
 ## 🔑 Design Choices
-Used **list** as a Data Structure which can handle a million records
+Used **list** as a Data Structure which can handle a million records.
 Memory: 1M readings → store in list (fine, ~8 MB). Prefix sum list same size.
 
 _getAverage(k)_
-Maintaining a pre calculated sum for faster queries 
+Maintaining a pre calculated sum for faster queries. 
 Maintain prefix[i] = sum of first i readings.
 So, Average of last k readings = prefix[𝑛]−prefix[𝑛−𝑘]/k
 	​
