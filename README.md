@@ -25,7 +25,7 @@ The agent can detect user intent, route queries to the correct sub-agent, and ma
 
 1. **Clone the repository**  
 ```bash
-git clone https://github.com/your-username/langgraph-agent.git
+git clone [https://github.com/your-username/langgraph-agent.git](https://github.com/ravi1173/Thrifty_AI.git)
 ```
 
 2. Install dependencies
