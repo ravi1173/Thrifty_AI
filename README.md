@@ -30,7 +30,7 @@ The agent can detect user intent, route queries to the correct sub-agent, and ma
 - 🔍 **Intent Detection** → Classifies input as **factual** or **creative**  
 - 📘 **Factual Agent** → Provides concise fact-based answers  
 - 🎨 **Creative Agent** → Generates imaginative responses (captions, stories, etc.)  
-- 🧠 **Short-term Memory** → Keeps track of the last 2–3 turns  
+- 🧠 **Short-term Memory** → Keeps track of the last 3 turns  
 - ⚡ **Async Execution** → Uses non-blocking OpenAI API calls  
 - 💬 **Ongoing Conversation** → Keeps chatting until you exit  
 
