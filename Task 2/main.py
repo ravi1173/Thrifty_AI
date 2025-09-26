@@ -5,7 +5,18 @@ from typing import Literal, List, Dict
 from collections import deque
 from dotenv import load_dotenv
 
+import os
+import sys
+
 load_dotenv()  
+
+# Check for API key
+api_key = os.getenv("OPENAI_API_KEY")
+if not api_key:
+    print("❌ ERROR: OpenAI API key not found.")
+    print("👉 Please set it in a `.env` file like this:")
+    print("OPENAI_API_KEY=your_api_key_here")
+    sys.exit(1)  # Exit gracefully
 
 # --- Define state ---
 class AgentState(dict):
