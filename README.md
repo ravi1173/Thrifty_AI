@@ -10,8 +10,8 @@ _getAverage(k)_
 
 ​
 _getMaxWindow(k)_
-This is equivalent to finding the maximum subarray sum of length k.
-With pre claculated sums, window sum for [i, i+k-1] = prefix[i+k] - prefix[i].
+- This is equivalent to finding the maximum subarray sum of length k.
+- With pre claculated sums, window sum for [i, i+k-1] = prefix[i+k] - prefix[i].
 
 ## ⚡ Performance
 - addReading → O(1).
