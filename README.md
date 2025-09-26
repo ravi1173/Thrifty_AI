@@ -1,12 +1,12 @@
 # TASK 1
 ## 🔑 Design Choices
-Used **list** as a Data Structure which can handle a million records.
+Used **list** as a Data Structure which can handle a million records <br>
 Memory: 1M readings → store in list (fine, ~8 MB). Prefix sum list same size.
 
 _getAverage(k)_
-Maintaining a pre calculated sum for faster queries. 
-Maintain prefix[i] = sum of first i readings.
-So, Average of last k readings = prefix[𝑛]−prefix[𝑛−𝑘]/k
+- Maintaining a pre calculated sum for faster queries. 
+- Maintain prefix[i] = sum of first i readings.
+- So, Average of last k readings = prefix[𝑛]−prefix[𝑛−𝑘]/k
 	​
 _getMaxWindow(k)_
 This is equivalent to finding the maximum subarray sum of length k.
@@ -25,8 +25,6 @@ With pre claculated sums, window sum for [i, i+k-1] = prefix[i+k] - prefix[i].
 This project is a **lightweight conversational agent** built with [LangGraph](https://python.langchain.com/docs/langgraph/), [LangChain](https://www.langchain.com/), and OpenAI.  
 The agent can detect user intent, route queries to the correct sub-agent, and maintain short-term memory across turns.  
 
----
-
 ## 🚀 Features  
 - 🔍 **Intent Detection** → Classifies input as **factual** or **creative**  
 - 📘 **Factual Agent** → Provides concise fact-based answers  
@@ -35,7 +33,6 @@ The agent can detect user intent, route queries to the correct sub-agent, and ma
 - ⚡ **Async Execution** → Uses non-blocking OpenAI API calls  
 - 💬 **Ongoing Conversation** → Keeps chatting until you exit  
 
----
 
 ## 📦 Setup  
 
